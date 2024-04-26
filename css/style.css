@@ -1,0 +1,410 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --main-color: rgb(230, 95, 120);
+  --main-transition: all 0.3s;
+}
+
+.text-pink {
+  color: var(--main-color);
+}
+
+/* Navbar */
+
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+  transition: var(--main-transition);
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:focus {
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header-bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 65px;
+}
+
+.hero h1::after {
+  content: " ";
+  animation: header-animation alternate 2s infinite;
+  transition: var(--main-transition);
+}
+
+@keyframes header-animation {
+  0% {
+    content: "|";
+  }
+
+  3% {
+    content: "D|";
+  }
+
+  5% {
+    content: "De|";
+  }
+
+  7% {
+    content: "Dev|";
+  }
+
+  10% {
+    content: "Deve|";
+  }
+
+  13% {
+    content: "Devel|";
+  }
+
+  15% {
+    content: "Develo|";
+  }
+
+  17% {
+    content: "Develop|";
+  }
+
+  20% {
+    content: "Developm|";
+  }
+
+  24% {
+    content: "Developme|";
+  }
+
+  25% {
+    content: "Developmen|";
+  }
+
+  27% {
+    content: "Development|";
+  }
+
+  30% {
+    content: "Development|";
+  }
+
+  32% {
+    content: "Developmen|";
+  }
+
+  35% {
+    content: "Developme|";
+  }
+
+  37% {
+    content: "Develop|";
+  }
+
+  40% {
+    content: "Develo|";
+  }
+
+  42% {
+    content: "Devel|";
+  }
+
+  45% {
+    content: "Deve|";
+  }
+
+  47% {
+    content: "Dev|";
+  }
+
+  50% {
+    content: "De|";
+  }
+
+  52% {
+    content: "Des|";
+  }
+
+  55% {
+    content: "Desi|";
+  }
+
+  57% {
+    content: "Desig|";
+  }
+
+  60% {
+    content: "Design|";
+  }
+
+  62% {
+    content: "Designe|";
+  }
+
+  65% {
+    content: "Designer|";
+  }
+
+  67% {
+    content: "Designer|";
+  }
+
+  70% {
+    content: "Designe|";
+  }
+
+  72% {
+    content: "Design|";
+  }
+
+  75% {
+    content: "Desig|";
+  }
+
+  77% {
+    content: "Desi|";
+  }
+
+  80% {
+    content: "Des|";
+  }
+
+  82% {
+    content: "De|";
+  }
+
+  85% {
+    content: "Dev|";
+  }
+
+  87% {
+    content: "Deve|";
+  }
+
+  90% {
+    content: "Devel|";
+  }
+
+  92% {
+    content: "Develo|";
+  }
+
+  95% {
+    content: "Develop|";
+  }
+
+  97% {
+    content: "Develope|";
+  }
+
+  100% {
+    content: "Developer|";
+  }
+}
+
+.hero p.myp,
+.client .sliderp,
+.client .mytitle p,
+.portfolio .mytitle p,
+.blog .mytitle p,
+.contact .mytitle p {
+  max-width: 500px;
+}
+
+.hero .btn-download:hover {
+  background-color: #fff;
+  color: #333 !important;
+}
+
+.hero .rounded_box {
+  width: 40px;
+  height: 70px;
+  border: 2px solid #fff;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveAnimi 1s alternate infinite;
+}
+
+.hero .rounded_box .line {
+  width: 5px;
+  height: 10px;
+  background-color: #fff;
+  bottom: 15px;
+}
+
+@keyframes moveAnimi {
+  0% {
+    bottom: 100px;
+  }
+
+  25% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 80px;
+  }
+
+  75% {
+    bottom: 50;
+  }
+
+  100% {
+    bottom: 60px;
+
+  }
+}
+
+/* About Section */
+
+.about .icon ul li {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+  transition: all 0.3s;
+}
+
+.about .icon ul li:hover {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+/* Client Section */
+
+.client,
+.blog {
+  background-color: #f1f1f1;
+}
+
+.client img {
+  width: 70px;
+}
+
+.client .carousel-indicators [data-bs-target] {
+  background-color: #bb7b87;
+}
+
+.client .carousel-indicators .active {
+  background-color: var(--main-color);
+}
+
+/* Portfolio Section */
+
+.portfolio .tabs .nav-item .nav-link {
+  color: #444 !important;
+}
+
+.portfolio .tabs .nav-item .nav-link.active {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+  border-radius: 25px;
+}
+
+.portfolio .item::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--main-transition);
+}
+
+.portfolio .item:hover::after{
+  opacity: 1;
+}
+
+.portfolio .item img{
+  transition: var(--main-transition);
+}
+
+.portfolio .item:hover img{
+  transform: scale(1.5);
+}
+
+.portfolio .item .overlay {
+  top: 100%;
+  left: 0;
+  transition: var(--main-transition);
+}
+
+.portfolio .item:hover .overlay{
+  top: 0;
+  z-index: 22;
+  color: #fff;
+}
+
+/* Blog Section */
+/* Contact Section */
+
+.contact .firstTwo input {
+  width: 48%;
+}
+
+.form-btn {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--main-color);
+}
+
+/* Spinner */
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 800px) {
+  #hero h1 {
+    font-size: 50px;
+  }
+}
+
+
